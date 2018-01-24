@@ -4,23 +4,17 @@
 logfile = log/crawl.f9beb4d9.log
 
 # Network magic number
-magic_number = f9beb4d9
+magic_number = cdf2c0ef
 
 # Default/fallback port number
-port = 8333
+port = 8112
 
 # Redis database number
 db = 0
 
 # List of DNS seeders to get a subset of reachable nodes
 seeders =
-    dnsseed.bitcoin.dashjr.org
-    dnsseed.bluematt.me
-    seed.bitcoin.jonasschnelli.ch
-    seed.bitcoin.sipa.be
-    seed.bitcoinstats.com
-    seed.btc.petertodd.org
-    seed.bitnodes.io
+ 45.32.77.102
 
 # Number of concurrent workers (greenlets)
 workers = 500
@@ -29,7 +23,7 @@ workers = 500
 debug = False
 
 # Public IP address for network interface
-source_address = 0.0.0.0
+source_address = 103.52.117.
 
 # Protocol version to use for outgoing version message
 protocol_version = 70015
@@ -41,7 +35,7 @@ protocol_version = 70015
 # crawler. This is so that users will not confuse your crawler with another
 # instance that is already running and generating data for the project.
 # -----------------------------------------------------------------------------
-user_agent = /bitnodes.earn.com:0.1/
+user_agent = /Biztactix.PacDetector:0.1/
 
 # Services to use for outgoing network address message
 services = 0
@@ -62,7 +56,7 @@ snapshot_delay = 240
 max_age = 86400
 
 # Attempt to establish connection with IPv6 nodes
-ipv6 = True
+ipv6 = false
 
 # Limit max. nodes per IPv6 network prefix
 ipv6_prefix = 64
@@ -100,7 +94,7 @@ exclude_ipv6_networks =
 exclude_ipv4_bogons = True
 
 # Attempt to establish connection with .onion nodes
-onion = True
+onion = false
 
 # Tor proxy is required to connect to .onion address
 tor_proxy = 127.0.0.1:9050
